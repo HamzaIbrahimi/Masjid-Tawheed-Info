@@ -1,142 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: "Roboto", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
+    font-weight: 400;
+    font-style: normal;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #D6D6D6;
-  margin: auto;
-  padding: 0;
-  align-items: center;
+    background-color: #D6D6D6;
+    min-height: 100vh;
 }
+
 .container {
-  width: 80%;
-  height: 100%;
-  margin: auto;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.title
-{
-  margin: auto;
-}
-h1
-{
-  font-size: 4vw;
-  font-weight: bold;
-  /* margin-top: 1.2vw; */
-}
-.progress-container 
-{
-  margin-top: 0px;
-  position: relative;
-  width: 74%;
-  background-color: #359AB0;
-  border-radius: 2.5vw; /* Adjust the radius as needed */
-  overflow: hidden; /* Ensure the progress doesn't overflow the container */
-  box-shadow: 2px 2px 2px #aaaaaa;
+    padding: 10px;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
-.progress-bar 
-{
-/* height: 80px; */
-height: 5vw;
-width: 30%;
-background-color: #011E31;
-border-radius: 2.5vw; /* Same radius as the container */
-transition: width 0.5s ease;
+.container > * {
+    width: 80%;
 }
 
-.progress-label
-{
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-color: #fff;
-font-weight: bold;
-/* font-size: xx-large; */
-font-size: 2.5vw;
+.title {
+    display: grid;
+    place-items: center;
+    line-height: 1.6;
 }
-.summary-container
-{
-/* display: flex; */
-/* justify-content: space-between; */
-margin-top: 10px;
-/* width: fit-content; */
-position: relative;
-width: 70%;
-background-color: #C0C0C0;
-flex-direction: column;
-/* font-size: 1.6rem; */
-font-size: 2vw;
-padding-left: 2rem;
-padding-right: 2rem;
-text-align: left;
-border-radius: 40px;
-box-shadow: 2px 2px 2px #aaaaaa;
+
+h1 {
+    font-size: 4vw;
+    font-weight: bold;
 }
-h2
-{
-margin-top: 1.2vw;
-margin-bottom: 1.2vw;
+
+
+.progress-container {
+    margin-top: 0px;
+    position: relative;
+    /* width: 74%; */
+    background-color: #359AB0;
+    border-radius: 2.5vw;
+    /* Adjust the radius as needed */
+    overflow: hidden;
+    /* Ensure the progress doesn't overflow the container */
+    box-shadow: 2px 2px 2px #aaaaaa;
+}
+
+.progress-bar {
+    /* height: 80px; */
+    height: 5vw;
+    width: 30%;
+    background-color: #011E31;
+    border-radius: 2.5vw;
+    /* Same radius as the container */
+    transition: width 0.5s ease;
+}
+
+.progress-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    /* font-size: xx-large; */
+    font-size: 2.5vw;
+}
+
+.summary-container {
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    background-color: #C0C0C0;
+    font-size: 2vw;
+    border-radius: 40px;
+    
+}
+
+
+h2 {
+    margin-top: 1.2vw;
+    margin-bottom: 1.2vw;
 
 }
 
-h2:nth-child(1) span
-{
-padding-left: 21.4vw;
-}
-h2:nth-child(2) span
-{
-padding-left: 15.6vw;
-}
-h2:nth-child(3) span
-{
-padding-left: 12.8vw;
-}
-h2:nth-child(4) span
-{
-padding-left: 11.1vw;
+
+
+.deadline-container {
+    margin-top: 10px;
+    /* width: 60vw; */
+    width: 74%;
+    background-color: #C0C0C0;
+    flex-direction: column;
+    font-size: 2vw;
+    border-radius: 40px;
+    box-shadow: 2px 2px 2px #aaaaaa;
 }
 
-.deadline-container
-{
-margin-top: 10px;
-/* width: 60vw; */
-width: 74%;
-background-color: #C0C0C0;
-flex-direction: column;
-font-size: 2vw;
-border-radius: 40px;
-box-shadow: 2px 2px 2px #aaaaaa;
+.deadline {
+    text-align: center;
+    font-size: 1.2vw;
 }
 
-.deadline
-{
-text-align: center;
-font-size: 1.2vw;
-}
-.countdown 
-{
-display: flex;
-justify-content: center;
+.countdown {
+    display: flex;
+    justify-content: center;
 }
 
-.countdown-item
-{
-text-align: center;
+.countdown-item {
+    text-align: center;
 }
 
-.countdown-number
-{
-font-size: 2vw;
-font-weight: bolder;
-color: #333;
+.countdown-number {
+    font-size: 2vw;
+    font-weight: bolder;
+    color: #333;
 }
 
-.countdown-label
-{
-/* font-size: 1rem; */
-font-size: 1.2vw;
-color: #666;
+.countdown-label {
+    font-size: 1.2vw;
+    color: #666;
+}
+
+
+
+.monetary-info {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    
+    
+
+}
+
+.monetary-info > * {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+}
+
+
+.monetary-info>span::after {
+    content: ' Mio. kr.';
+    margin-left: 5px;
 }
