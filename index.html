@@ -1,56 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Masjid tawheed</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masjid tawheed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="script.js" defer></script>
 
 </head>
-<body>
-  <div class="container">
-    <div class="title">
-      <h1>INDSAMLING TIL MASJID TAWHIID</h1>
-    </div>
-      <div class="progress-container">
-        <div class="progress-bar" id="progressBar"></div>
-        <div class="progress-label" id="progressLabel">0%</div>
-      </div>
-      <div class="summary-container">
-        <h2>Købspris: <span id="totalAmount">18.30</span> Mio. kr.</h2>
-        <h2>Afbetalt beløb: <span id="paidAmount">5.00</span> Mio. kr.</h2>
-        <h2>Indsamlet beløb: <span id="raisedAmount">2.35</span> Mio. kr.</h2>
-        <h2>Manglende beløb: <span id="missingAmount">11.30</span> Mio. kr.</h2>
-      </div>
-      <div class="deadline-container">
-        <div class="deadline">
-        <h2>Deadline: 31. December 2025</h2>
-      </div>
 
-      <div class="countdown">
-        <div class="countdown-item">
-          <span class="countdown-number" id="days">00</span>
-          <span class="countdown-label">Dage</span>
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>INDSAMLING TIL MASJID TAWHIID</h1>
         </div>
-        <div class="countdown-item">
-          <span class="countdown-number" id="hours">00</span>
-          <span class="countdown-label">timer</span>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+            <div class="progress-label" id="progressLabel">0%</div>
         </div>
-        <div class="countdown-item">
-          <span class="countdown-number" id="minutes">00</span>
-          <span class="countdown-label">Minutter</span>
+        <div class="summary-container">
+            <div class="info-header">
+                <h2>Købspris: </h2>
+                <h2>Afbetalt beløb: </h2>
+                <h2>Indsamlet beløb:</h2>
+                <h2>Manglende beløb: </h2>
+            </div>
+            <div class="monetary-info">
+                <span id="totalAmount"> 18.30 </span>
+                <span id="paidAmount"> 5.00 </span>
+                <span id="raisedAmount"> 2.35 </span>
+                <span id="missingAmount"> 11.30 </span>
+            </div>
         </div>
-        <div class="countdown-item">
-          <span class="countdown-number" id="seconds">00</span>
-          <span class="countdown-label">Sekunder</span>
+        <div class="deadline-container">
+            <div class="deadline">
+                <h2>Deadline: 31. December 2025</h2>
+            </div>
+
+            <div class="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-number" id="days">00</span>
+                    <span class="countdown-label">Dage</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="hours">00</span>
+                    <span class="countdown-label">timer</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="minutes">00</span>
+                    <span class="countdown-label">Minutter</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-number" id="seconds">00</span>
+                    <span class="countdown-label">Sekunder</span>
+                </div>
+            </div>
         </div>
-      </div>
-      </div>
-      
-  </div>
-  <script>
-    console.log(document.querySelector('.container').children)
-  </script>
+
+    </div>
 </body>
+
 </html>
