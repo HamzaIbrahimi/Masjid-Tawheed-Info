@@ -27,11 +27,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 1.6;
     word-spacing: 1.1rem;
-    text-decoration: underline;
-    font-size: 1.3rem;
-    font-family: Helvetica, sans-serif
+    text-decoration: overline;
+    font-size: 2.5vw;
+    font-family: Helvetica, sans-serif, 'Roboto';
+}
+
+h1 {
+    flex-shrink: 0;
 }
 
 
@@ -72,7 +75,7 @@ body {
 
 .summary-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 80%;
     align-self: center;
     gap: 100px;
@@ -83,19 +86,24 @@ body {
 }
 
 .deadline-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     margin-top: 10px;
     align-self: center;
     width: 50%;
     background-color: #C0C0C0;
     font-size: 2vw;
     border-radius: 40px;
-    padding: 20px 20px;
+    padding: 10px 20px;
     box-shadow: 2px 2px 2px #aaaaaa;
 }
 
 .deadline {
     text-align: center;
     font-size: 1.2vw;
+    display: flex;
+    flex-direction: column;
 }
 
 .countdown {
@@ -104,18 +112,16 @@ body {
     gap: 12px;
 }
 
-.countdown>* {
+.countdown > * {
     display: flex;
     gap: 5px;
 }
 
-.countdown-item>* {
+.countdown-item > * {
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 100px;
-
-
 }
 
 
@@ -134,13 +140,10 @@ body {
 .monetary-info {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
-
-
-
+    font-weight: 600;
 }
 
-.monetary-info>* {
+.monetary-info > * {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -149,17 +152,21 @@ body {
 }
 
 
-.monetary-info>span::after {
+.monetary-info > span::after {
     content: ' Mio. kr.';
     margin-left: 5px;
+}
+
+hr {
+    width: 70%;
+    align-self: center;
 }
 
 #logo {
     width: 120px;
     height: 120px;
     object-fit: cover;
-    object-position: 50% 100%;
     align-self: center;
     border-radius: 50%;
-    border: 3px solid rgb(205, 71, 71);
+    border: 3px solid rgba(238, 99, 82, 0.7);
 }
