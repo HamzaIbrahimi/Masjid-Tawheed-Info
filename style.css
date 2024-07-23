@@ -17,31 +17,29 @@ body {
 
 .container {
     padding: 10px;
-    gap: 30px;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    gap: 15px;
 }
 
-.container > * {
-    width: 80%;
-}
 
 .title {
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     line-height: 1.6;
-}
-
-h1 {
-    font-size: 4vw;
-    font-weight: bold;
+    word-spacing: 1.1rem;
+    text-decoration: underline;
+    font-size: 1.3rem;
+    font-family: Helvetica, sans-serif
 }
 
 
 .progress-container {
     margin-top: 0px;
     position: relative;
+    width: 80%;
+    align-self: center;
     /* width: 74%; */
     background-color: #359AB0;
     border-radius: 2.5vw;
@@ -74,31 +72,24 @@ h1 {
 
 .summary-container {
     display: flex;
+    justify-content: space-evenly;
     width: 80%;
-    justify-content: space-around;
+    align-self: center;
+    gap: 100px;
     background-color: #C0C0C0;
     font-size: 2vw;
     border-radius: 40px;
-    
+    padding: 20px 20px;
 }
-
-
-h2 {
-    margin-top: 1.2vw;
-    margin-bottom: 1.2vw;
-
-}
-
-
 
 .deadline-container {
     margin-top: 10px;
-    /* width: 60vw; */
-    width: 74%;
+    align-self: center;
+    width: 50%;
     background-color: #C0C0C0;
-    flex-direction: column;
     font-size: 2vw;
     border-radius: 40px;
+    padding: 20px 20px;
     box-shadow: 2px 2px 2px #aaaaaa;
 }
 
@@ -110,11 +101,23 @@ h2 {
 .countdown {
     display: flex;
     justify-content: center;
+    gap: 12px;
 }
 
-.countdown-item {
-    text-align: center;
+.countdown>* {
+    display: flex;
+    gap: 5px;
 }
+
+.countdown-item>* {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+
+
+}
+
 
 .countdown-number {
     font-size: 2vw;
@@ -128,17 +131,16 @@ h2 {
 }
 
 
-
 .monetary-info {
     display: flex;
     flex-direction: column;
     border: 1px solid red;
-    
-    
+
+
 
 }
 
-.monetary-info > * {
+.monetary-info>* {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -150,4 +152,14 @@ h2 {
 .monetary-info>span::after {
     content: ' Mio. kr.';
     margin-left: 5px;
+}
+
+#logo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    object-position: 50% 100%;
+    align-self: center;
+    border-radius: 50%;
+    border: 3px solid rgb(205, 71, 71);
 }
