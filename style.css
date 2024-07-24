@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,8 +8,7 @@
 }
 
 :root {
-    font-family: "Roboto", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
-    font-weight: 400;
+    font-family: "Roboto Condensed", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
     font-style: normal;
 }
 
@@ -30,11 +32,13 @@ body {
     word-spacing: 1.1rem;
     text-decoration: overline;
     font-size: 2.5vw;
-    font-family: Helvetica, sans-serif, 'Roboto';
+    font-family: 'Roboto';
+
 }
 
 h1 {
-    flex-shrink: 0;
+    text-wrap: balance;
+    font-weight: 500;
 }
 
 
@@ -112,12 +116,12 @@ h1 {
     gap: 12px;
 }
 
-.countdown > * {
+.countdown>* {
     display: flex;
     gap: 5px;
 }
 
-.countdown-item > * {
+.countdown-item>* {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -143,7 +147,7 @@ h1 {
     font-weight: 600;
 }
 
-.monetary-info > * {
+.monetary-info>* {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -152,7 +156,7 @@ h1 {
 }
 
 
-.monetary-info > span::after {
+.monetary-info>span::after {
     content: ' Mio. kr.';
     margin-left: 5px;
 }
@@ -163,10 +167,15 @@ hr {
 }
 
 #logo {
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 150px;
+    object-position: 50% 10%;
     object-fit: cover;
     align-self: center;
-    border-radius: 50%;
-    border: 3px solid rgba(238, 99, 82, 0.7);
+    margin-bottom: 1rem;
+    padding: 10px;
+    border: 3px solid rgba(15, 23, 42, .5);
+
+
+
 }
