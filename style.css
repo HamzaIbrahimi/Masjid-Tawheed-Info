@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -10,30 +9,29 @@
 :root {
     font-family: "Roboto Condensed", sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI';
     font-style: normal;
-    --color_50: #e2e8f0;
-    --color_100: ;
-    --color_200: ;
-    --color_300: ;
-    --color_400: ;
-    --color_500: ;
-    --color_600: ;
-    --color_700: ;
-    --color_800: ;
-    --color_900: ;
-    --color_950: ;
+    --color_100: #f3f4f6;
+    --color_300: #d1d5db;
+    --color_500: #6b7280;
+    --color_600: #1e293b;
+    --color_900: #111827;
+    --color_950: #020617;
 }
 
 body {
     background-color: #D6D6D6;
     min-height: 100vh;
-    background-color: var(--color_50);
+    background-color: var(--color_100);
 }
 
 .container {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 30px;
+}
+
+.container>* {
+    color: var(--color_900);
 }
 
 
@@ -41,31 +39,29 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    word-spacing: 1.1rem;
-    text-decoration: overline;
+    flex-direction: column;
+    word-spacing: 1rem;
     font-size: 2.5vw;
     font-family: 'Roboto';
-
 }
 
 h1 {
     text-wrap: balance;
     font-weight: 500;
+    color: var(--color_900);
 }
-
 
 .progress-container {
     margin-top: 0px;
     position: relative;
     width: 70%;
     align-self: center;
-    /* width: 74%; */
     background-color: #359AB0;
     border-radius: 2.5vw;
     /* Adjust the radius as needed */
     overflow: hidden;
     /* Ensure the progress doesn't overflow the container */
-    box-shadow: 2px 2px 2px #aaaaaa;
+    box-shadow: 2px 2px 2px var(--color_700);
 }
 
 .progress-bar {
@@ -92,13 +88,15 @@ h1 {
 .summary-container {
     display: flex;
     justify-content: center;
-    width: 65%;
+    width: clamp(50%, 70%, 80%);
     align-self: center;
     gap: 100px;
-    background-color: #C0C0C0;
+    /* background-color: #C0C0C0; */
+    background-color: var(--color_300);
     font-size: 2vw;
-    border-radius: 40px;
+    border-radius: 20rem 20rem;
     padding: 20px 20px;
+    border: 2px solid var(--color_500);
 }
 
 .deadline-container {
@@ -107,12 +105,13 @@ h1 {
     gap: 10px;
     margin-top: 10px;
     align-self: center;
-    width: 50%;
-    background-color: #C0C0C0;
+    width: 60%;
+    background-color: var(--color_300);
     font-size: 2vw;
-    border-radius: 40px;
+    border-radius: 20rem 20rem;
     padding: 10px 20px;
     box-shadow: 2px 2px 2px #aaaaaa;
+    border: 2px solid var(--color_500);
 }
 
 .deadline {
@@ -120,6 +119,7 @@ h1 {
     font-size: 1.2vw;
     display: flex;
     flex-direction: column;
+    color: var(--color_900);
 }
 
 .countdown {
@@ -131,6 +131,7 @@ h1 {
 .countdown>* {
     display: flex;
     gap: 5px;
+    color: var(--color_900);
 }
 
 .countdown-item>* {
@@ -144,12 +145,12 @@ h1 {
 .countdown-number {
     font-size: 2vw;
     font-weight: bolder;
-    color: #333;
+
 }
 
 .countdown-label {
     font-size: 1.2vw;
-    color: #666;
+    color: var(--color_500);
 }
 
 
@@ -162,7 +163,7 @@ h1 {
 .monetary-info>* {
     flex: 1;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     font-size: 3vw;
 }
@@ -179,19 +180,11 @@ hr {
 }
 
 #logo {
-    width: 200px;
-    height: 150px;
+    width: 20rem;
+    height: 15rem;
     object-position: 50% 10%;
     object-fit: cover;
     align-self: center;
     margin-bottom: 1rem;
     padding: 10px;
-    /* border: 3px solid rgba(15, 23, 42, .5); */
-
-
-
-} 
-#logo:hover {
-    /* transform: rotate(-30deg);
-    transition: 3s ease-in; */
 }
