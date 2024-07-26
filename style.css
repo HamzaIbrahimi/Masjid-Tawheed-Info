@@ -167,12 +167,13 @@ h1 {
     justify-content: flex-end;
     align-items: center;
     font-size: 3vw;
+    gap: 4px;
 }
 
 
 .monetary-info>span::after {
     content: ' Mio. kr.';
-    margin-left: 5px;
+    /* margin-left: 5px; */
 }
 
 hr {
