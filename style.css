@@ -231,13 +231,14 @@ h1 {
         gap: 0;
         justify-items: start;
         border-radius: 10px 20px;
-        width: 100%;
+        width: fit-content;
 
     }
 
     .monetary-info>*,
     .info-header>* {
         font-size: 1rem;
+        text-wrap: nowrap;
 
     }
 
