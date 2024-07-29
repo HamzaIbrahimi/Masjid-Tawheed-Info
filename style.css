@@ -224,7 +224,7 @@ h1 {
         text-decoration: overline;
     }
 
-    .container div+hr {
+    .container div + hr {
         display: none;
     }
 
@@ -233,8 +233,9 @@ h1 {
         grid-template-columns: 1fr 100px;
         border-radius: 0;
         gap: 0;
-        justify-items: center;
+        justify-items: start;
         border-radius: 10px 20px;
+        width: 100%;
 
     }
 
@@ -253,7 +254,7 @@ h1 {
     }
 
     .countdown-item {
-        gap: 5px;
+        gap: 3px;
     }
 
     .deadline-container>*,
