@@ -191,7 +191,7 @@ h1 {
 
 @media only screen and (max-width: 480px) {
 
-  
+
 
     body {
         margin: 0;
@@ -217,12 +217,10 @@ h1 {
     h1 {
         word-spacing: normal;
         font-size: 1.3rem;
-        text-decoration: overline;
+
     }
 
-    .container div + hr {
-        display: none;
-    }
+
 
     .summary-container {
         display: grid;
