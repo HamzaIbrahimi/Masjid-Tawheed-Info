@@ -190,9 +190,13 @@ h1 {
 
 
 @media only screen and (max-width: 480px) {
-    html, body {
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-      }
+
+    html,
+    body {
+        overflow-x: hidden;
+        /* Prevent horizontal scrolling */
+    }
+
     body {
         margin: 0;
         padding: 0;
@@ -207,7 +211,7 @@ h1 {
         place-items: center;
     }
 
-   
+
 
     #logo {
         width: 200px;
@@ -228,17 +232,16 @@ h1 {
         display: grid;
         grid-template-columns: 1fr 100px;
         border-radius: 0;
-        gap:0;
+        gap: 0;
         justify-items: center;
         border-radius: 10px 20px;
-        
+
     }
 
-
-    .monetary-info >*,
-    .info-header > * {
+    .monetary-info>*,
+    .info-header>* {
         font-size: 1rem;
-        
+
     }
 
     .deadline-container {
@@ -252,6 +255,7 @@ h1 {
     .countdown-item {
         gap: 5px;
     }
+
     .deadline-container>*,
     .countdown .countdown-label {
         font-size: 0.5rem;
