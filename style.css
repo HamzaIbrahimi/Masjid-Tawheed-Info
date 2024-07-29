@@ -191,11 +191,7 @@ h1 {
 
 @media only screen and (max-width: 480px) {
 
-    html,
-    body {
-        overflow-x: hidden;
-        /* Prevent horizontal scrolling */
-    }
+  
 
     body {
         margin: 0;
