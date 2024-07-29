@@ -189,3 +189,77 @@ h1 {
 }
 
 
+@media only screen and (max-width: 480px) {
+    html, body {
+        overflow-x: hidden; /* Prevent horizontal scrolling */
+      }
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        display: grid;
+        grid-template-rows: repeat(5, .1fr);
+        min-height: 100vh;
+        gap: 10px;
+        padding: 20px;
+        place-items: center;
+    }
+
+   
+
+    #logo {
+        width: 200px;
+        height: 200px;
+    }
+
+    h1 {
+        word-spacing: normal;
+        font-size: 1.3rem;
+        text-decoration: overline;
+    }
+
+    .container div+hr {
+        display: none;
+    }
+
+    .summary-container {
+        display: grid;
+        grid-template-columns: 1fr 100px;
+        border-radius: 0;
+        gap:0;
+        justify-items: center;
+        border-radius: 10px 20px;
+        
+    }
+
+
+    .monetary-info >*,
+    .info-header > * {
+        font-size: 1rem;
+        
+    }
+
+    .deadline-container {
+        width: 75%;
+    }
+
+    .deadline h2 {
+        font-size: 1.2rem;
+    }
+
+    .countdown-item {
+        gap: 5px;
+    }
+    .deadline-container>*,
+    .countdown .countdown-label {
+        font-size: 0.5rem;
+    }
+
+    .countdown .countdown-number {
+        font-size: 1.2rem;
+    }
+
+
+}
